@@ -27,3 +27,17 @@ wasm-pack test --headless --firefox
 ```sh
 wasm-pack publish
 ```
+
+### Advantages over Yjs
+
+
+* Manual garbage collection. I.e. doesn't track every character as a separate object.
+* Uses wee_alloc as a minimal memory management library.
+* Small bundle size.
+
+
+### Todo
+
+* Switch to monorepo.
+* Reimplement classes from Yrs to export information custom to the web.
+
